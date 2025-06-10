@@ -37,3 +37,44 @@ export default function CreatePage() {
                     className="input input-bordered"
                   />
                 </p>
+              </h2>
+              <p>
+                Customer ID:
+                <input
+                  type="text"
+                  name="customer_id"
+                  placeholder="C030"
+                  className="input input-bordered"
+                  required  // ✅ HTMLレベルでも入力必須に
+                />
+              </p>
+              <p>
+                Age:
+                <input
+                  type="number"
+                  name="age"
+                  placeholder="30"
+                  className="input input-bordered"
+                />
+              </p>
+              <p>
+                Gender:
+                <input
+                  type="text"
+                  name="gender"
+                  placeholder="女"
+                  className="input input-bordered"
+                />
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <button type="submit" className="btn btn-primary m-4 text-2xl">
+                作成
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+}
